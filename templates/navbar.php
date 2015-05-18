@@ -7,6 +7,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Main</a></li>
                 <li><a href="/hello">Hello</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
         </div>
     </div>

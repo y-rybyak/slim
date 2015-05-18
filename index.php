@@ -17,4 +17,12 @@ $app->get('/hello', function () use ($app) {
     $app->render('hello.php', ["name"=>$name]);
 });
 
+$app->get('/login', function () use ($app) {
+    $app->render('login.php');
+});
+
+$app->get('/registration', function () use ($app) {
+    $app->render('registration.php');
+});
+
 $app->run();
