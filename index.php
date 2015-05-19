@@ -23,4 +23,9 @@ $app->get('/rate', function () use ($app) {
     $app->render('rate.php', ["rating"=>$rating]);
 });
 
+$app->get('/database', function () use ($app) {
+    require_once('lib/db.php');
+    $app->render('database.php', ["users"=>all_users()]);
+});
+
 $app->run();
