@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <h2>Please rate the application.</h2>
             <?php
-            print (isset($rating))?"Your last rate was $rating":"";
+            print (isset($rating))?"Your rate is $rating. Thank you.":"";
             ?>
             <form name="nameForm" method="GET" action="/rate">
                 <div class="radio">
