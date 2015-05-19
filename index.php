@@ -17,4 +17,10 @@ $app->get('/hello', function () use ($app) {
     $app->render('hello.php', ["name"=>$name]);
 });
 
+$app->get('/rate', function () use ($app) {
+    $request = $app->request();
+    $rating = $request->params('stars');
+    $app->render('rate.php', ["rating"=>$rating]);
+});
+
 $app->run();
