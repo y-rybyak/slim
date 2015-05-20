@@ -22,17 +22,20 @@
                 //var_dump($rightAnswers);
                 //print"</pre>";
                 $wronganswers = 0;
+                $rightanswers = 120;
                 $wrongquestions = [];
                 foreach($rightAnswers as $key => $value) {
                     if($value != $answers[$key]) {
                         $wronganswers += 1;
-                        $wrongquestions[] = $key;
+                        $wrongquestions[] = $key + 1;
                     }
                 }
-                print "Кол-во ошибок: " . $wronganswers . "<br />";
-                print "Ошибки в ответах номер ";
+                $rightanswers -= $wronganswers;
+                print "Количество ошибочных ответов: " . $wronganswers . "<br />";
+                print "Количество правильных ответов: " . $rightanswers . "<br />";
+                print "Были допущены ошибки в ответах номер ";
                 foreach ($wrongquestions as $value) {
-                    print $value . ", ";
+                    print $value . " ";
                 }
             }
             else {
