@@ -9,6 +9,7 @@
                 <li><a href="/hello">Hello</a></li>
                 <li><a href="/rate">Rate</a></li>
                 <li><a href="/database">Database</a></li>
+                <li><a href="/test">Test</a></li>
             </ul>
         </div>
     </div>

@@ -28,4 +28,16 @@ $app->get('/database', function () use ($app) {
     $app->render('database.php', ["users"=>all_users()]);
 });
 
+$app->get('/test', function () use ($app) {
+    $app->render('test.php');
+});
+
+$app->post('/test', function () use ($app) {
+
+    $request = $app->request();
+    $body = $request->getBody();
+    $answers = explode("&", $body);
+    $app->render('test.php', ["answers"=>$answers]);
+});
+
 $app->run();
