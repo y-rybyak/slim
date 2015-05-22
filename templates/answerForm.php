@@ -966,10 +966,15 @@
     <br/>
 
     <div class="form-group">
-        <label for="testName">Your name</label>
-        <input type="text" class="form-control" name="testName" id="testName" required placeholder="Enter your name">
+        <label for="testName">Ваше имя</label>
+        <input type="text" class="form-control" name="testName" id="testName" required placeholder="Введите имя">
     </div>
 
-    <button class="btn btn-default" type="submit">Check your answers</button>
+    <div class="form-group">
+        <label for="testEmail">Если Вы хотите, чтобы репетитор с вами связался, оставьте e-mail</label>
+        <input type="email" class="form-control" name="testEmail" id="testEmail" placeholder="Введите e-mail">
+    </div>
+
+    <button class="btn btn-default" type="submit">Узнать результат</button>
     <br/><br/>
 </form>
