@@ -12,8 +12,12 @@ if (isset($answers)) {
     }
     $rightanswers -= $wronganswers;
     print $_POST["testName"] . "<br />";
-    if (!empty($_POST["testEmail"])) {print $_POST["testEmail"] . "<br />";}
-    if (!empty($_POST["testNumber"])) {print $_POST["testNumber"] . "<br />";}
+    if (!empty($_POST["testEmail"])) {
+        print $_POST["testEmail"] . "<br />";
+    }
+    if (!empty($_POST["testNumber"])) {
+        print $_POST["testNumber"] . "<br />";
+    }
     print "Количество ошибочных ответов: " . $wronganswers . "<br />";
     print "Количество правильных ответов: " . $rightanswers . "<br />";
     if (!empty($wrongquestions)) {
