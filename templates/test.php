@@ -12,36 +12,7 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <?php
-            if (isset($answers)) {
-                include(__DIR__ . '../../lib/answers.php');
-                //print"<pre>";
-                //var_dump($answers);
-                //print"</pre>";
-                //print"<pre>";
-                //var_dump($rightAnswers);
-                //print"</pre>";
-                $wronganswers = 0;
-                $rightanswers = 120;
-                $wrongquestions = [];
-                foreach($rightAnswers as $key => $value) {
-                    if($value != $answers[$key]) {
-                        $wronganswers += 1;
-                        $wrongquestions[] = $key + 1;
-                    }
-                }
-                $rightanswers -= $wronganswers;
-                print "Количество ошибочных ответов: " . $wronganswers . "<br />";
-                print "Количество правильных ответов: " . $rightanswers . "<br />";
-                print "Были допущены ошибки в ответах номер ";
-                foreach ($wrongquestions as $value) {
-                    print $value . " ";
-                }
-            }
-            else {
-                include "answerForm.php";
-            }
-            ?>
+            <?php include(ROOT . '/models/test.php'); ?>
         </div>
 <?php include 'footer.php'?></body>
 </html>
