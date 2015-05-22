@@ -964,6 +964,12 @@
         <label><input required type="radio" name="119" value="3" checked id="a119-3">What's more</label><br/>
     </div>
     <br/>
+
+    <div class="form-group">
+        <label for="testName">Your name</label>
+        <input type="text" class="form-control" name="testName" id="testName" required placeholder="Enter your name">
+    </div>
+
     <button class="btn btn-default" type="submit">Check your answers</button>
     <br/><br/>
 </form>
