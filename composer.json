@@ -1,6 +1,7 @@
 {
   "require": {
-    "slim/slim": "~2.0",
-    "swiftmailer/swiftmailer": "@stable"
+    "slim/slim": "@stable",
+    "swiftmailer/swiftmailer": "@stable",
+    "twig/twig": "@stable"
   }
 }

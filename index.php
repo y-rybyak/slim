@@ -4,7 +4,7 @@ define('ROOT', __DIR__);
 
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465)
     ->setUsername('yrybyak@gmail.com')
-    ->setPassword('6710omne8864padmehuM')
+    ->setPassword('')
     ->setEncryption('ssl')
 ;
 $mailer = Swift_Mailer::newInstance($transport);
