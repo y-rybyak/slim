@@ -18,12 +18,10 @@ if (isset($answers)) {
         foreach ($wrongquestions as $value) {
             print $value . " ";
         }
-    }
-    else {
+    } else {
         print "Нет ни одной ошибки!";
     }
-}
-else {
+} else {
     include(ROOT . "/templates/answerForm.php");
 }
 ?>

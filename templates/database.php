@@ -15,7 +15,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <?php
-            foreach($users as $email) {
+            foreach ($users as $email) {
                 print $email . "<br />";
             }
             ?>
@@ -23,4 +23,5 @@
     </div>
 </div>
 <?php include 'footer.php' ?>
-</body></html>
+</body>
+</html>

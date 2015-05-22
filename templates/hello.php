@@ -14,15 +14,14 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-                <?php
-                if (isset($name) AND $name != "") {
-                    print "<h2>Hello, " . $name . "!</h2>";
-                }
-                else {
-                    print "<h2>Hello! What is your name?</h2>";
-                    include "nameForm.php";
-                }
-                ?>
+            <?php
+            if (isset($name) AND $name != "") {
+                print "<h2>Hello, " . $name . "!</h2>";
+            } else {
+                print "<h2>Hello! What is your name?</h2>";
+                include "nameForm.php";
+            }
+            ?>
         </div>
     </div>
 </div>
