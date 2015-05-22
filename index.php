@@ -53,7 +53,7 @@ $app->post('/test', function () use ($app, $mailer) {
         ->setTo('y4@miritec.com')
         ->setBody($resultEmail)
         ->setContentType("text/html");
-    $mailer->send($message);
+    //$mailer->send($message);
 });
 
 $app->run();
