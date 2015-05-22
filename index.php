@@ -44,18 +44,16 @@ $app->post('/test', function () use ($app, $mailer) {
     $request = $app->request();
     $body = $request->getBody();
     $answers = explode("&", $body);
+    $app->render('test.php', ["answers" => $answers]);
 
     //email block
-    $welcomeEmail = $app->view->fetch('email/test.php');
+    $resultEmail = $app->view->fetch('email/test.php');
     $message = Swift_Message::newInstance('Результат тестирования')
         ->setFrom(['y.rybyak@gmail.com' => 'robomail'])
-        ->setTo(['y4@miritec.com' => 'You'])
-        ->setBody($welcomeEmail)
+        ->setTo('y4@miritec.com')
+        ->setBody($resultEmail)
         ->setContentType("text/html");
-    //print $results =
-    //$mailer->send($message);
-
-    $app->render('test.php', ["answers" => $answers]);
+    $mailer->send($message);
 });
 
 $app->run();
